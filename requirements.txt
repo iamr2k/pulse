@@ -1,4 +1,4 @@
-scipy==1.6.3
+#scipy==1.6.3
 opencv-python
 #matplotlib==3.4.2
 Flask==2.0.1
