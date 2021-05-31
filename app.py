@@ -9,7 +9,6 @@ from scipy import fftpack
 # from matplotlib.figure import Figure
 
 app = Flask(__name__)
-
 cap = cv2.VideoCapture(0) 
 
 
