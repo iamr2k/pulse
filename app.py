@@ -3,7 +3,7 @@ import numpy as np
 import cv2
 import time
 import matplotlib.pylab as plt
-from scipy import fftpack
+#from scipy import fftpack
 #import io
 # from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 # from matplotlib.figure import Figure
@@ -37,13 +37,14 @@ def gen_frames():
     
     x = video2
     f_s = 30
-    X = fftpack.fft(x)
-    freqs = fftpack.fftfreq(len(x)) * f_s
-    s = np.sort(np.abs(X))
-    i = np.where(np.isclose(np.abs(X), s[-2]))
-    j = np.where(np.isclose(np.abs(X), s[-3]))
-    k = np.where(np.isclose(np.abs(X), s[-4]))
-    val = round(freqs[i][0]*60,2)
+    #X = fftpack.fft(x)
+    #freqs = fftpack.fftfreq(len(x)) * f_s
+    #s = np.sort(np.abs(X))
+    #i = np.where(np.isclose(np.abs(X), s[-2]))
+    #j = np.where(np.isclose(np.abs(X), s[-3]))
+    #k = np.where(np.isclose(np.abs(X), s[-4]))
+    #val = round(freqs[i][0]*60,2)
+    val = 72
     # print("pulse = ",val,"bpm")
     # print("secondary peak = ",round(freqs[j][0]*60,2),"per minutes")
     # print("tertiary peak = ",round(freqs[k][0]*60,2),"per minutes")
