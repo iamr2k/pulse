@@ -2,7 +2,7 @@ from flask import Flask, render_template, Response,jsonify
 import numpy as np
 import cv2
 import time
-import matplotlib.pylab as plt
+#import matplotlib.pylab as plt
 #from scipy import fftpack
 #import io
 # from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
